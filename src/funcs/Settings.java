@@ -23,4 +23,8 @@ public class Settings {
 	public static final String TAIL_WIND_COMPONENT_CODE = "TWC";
 	public static final String TRUE_AIRSPEED_CODE = "TAS";
 	public static final String GROUND_SPEED_CODE = "GS";
+	public static final String CELCIUS_CODE = "C";
+	public static final String FAHRENHEIT_CODE = "F";
+	public static final String FAHRENHEIT_TO_CECLIUS_CODE = "FTC";
+	public static final String CELCIUS_TO_FAHRENHEIT_CODE = "CTF";
 }

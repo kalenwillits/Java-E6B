@@ -7,7 +7,9 @@ public enum FuncType {
 	HWC(Settings.HEAD_WIND_COMPONENT_CODE),
 	TWC(Settings.TAIL_WIND_COMPONENT_CODE),
 	WCA(Settings.WIND_CORRECTION_ANGLE_CODE),
-	GS(Settings.GROUND_SPEED_CODE);
+	GS(Settings.GROUND_SPEED_CODE),
+	FTC(Settings.FAHRENHEIT_TO_CECLIUS_CODE),
+	CTF(Settings.CELCIUS_TO_FAHRENHEIT_CODE);
 
   private String funcType;
 

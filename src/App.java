@@ -6,6 +6,8 @@ import funcs.FuncHeadWindComponent;
 import funcs.FuncTailWindComponent;
 import funcs.FuncWindCorrectionAngle;
 import funcs.FuncGroundSpeed;
+import funcs.FuncFahrenheitToCelcius;
+import funcs.FuncCelciusToFahrenheit;
 
 
 public class App {
@@ -20,6 +22,8 @@ public class App {
 			case TWC -> new FuncTailWindComponent();
 			case WCA -> new FuncWindCorrectionAngle();
 			case GS -> new FuncGroundSpeed();
+			case FTC -> new FuncFahrenheitToCelcius();
+			case CTF -> new FuncCelciusToFahrenheit();
 		};
 
 		func.fit(argumentParser.getParams());
