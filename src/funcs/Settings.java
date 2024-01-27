@@ -12,6 +12,8 @@ public class Settings {
 
 	public static final Double MAX_RADIAL = 360d;
 	public static final Double WIND_CORRECTION_ANGLE_APROX_FACTOR = 90d;
+	public static final Double STANDARD_PRESSURE = 29.92d;
+	public static final Double STANDARD_TEMPERATURE_C = 15d; 
 
 	public static final String HELP_CODE = "HELP";
 	public static final String TRUE_COURSE_CODE = "TC";
@@ -27,4 +29,10 @@ public class Settings {
 	public static final String FAHRENHEIT_CODE = "F";
 	public static final String FAHRENHEIT_TO_CECLIUS_CODE = "FTC";
 	public static final String CELCIUS_TO_FAHRENHEIT_CODE = "CTF";
+	public static final String ALTIMETER_SETTING_CODE = "ALT";
+	public static final String INDICATED_AIRPSEED_CODE = "IAS";
+	public static final String CALIBRATED_AIRPSEED_CODE = "CAS";
+	public static final String TRUE_ALTITUDE_CODE = "A";
+	public static final String PRESSURE_ALTITUDE_CODE = "PA";
+	public static final String OUTSIDE_AIR_TEMPERATURE_CODE = "OAT";
 }

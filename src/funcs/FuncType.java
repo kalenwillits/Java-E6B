@@ -9,7 +9,9 @@ public enum FuncType {
 	WCA(Settings.WIND_CORRECTION_ANGLE_CODE),
 	GS(Settings.GROUND_SPEED_CODE),
 	FTC(Settings.FAHRENHEIT_TO_CECLIUS_CODE),
-	CTF(Settings.CELCIUS_TO_FAHRENHEIT_CODE);
+	CTF(Settings.CELCIUS_TO_FAHRENHEIT_CODE),
+	TAS(Settings.TRUE_AIRSPEED_CODE),
+	PA(Settings.PRESSURE_ALTITUDE_CODE);
 
   private String funcType;
 

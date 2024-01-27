@@ -8,6 +8,8 @@ import funcs.FuncWindCorrectionAngle;
 import funcs.FuncGroundSpeed;
 import funcs.FuncFahrenheitToCelcius;
 import funcs.FuncCelciusToFahrenheit;
+import funcs.FuncTrueAirspeed;
+import funcs.FuncPressureAltitude;
 
 
 public class App {
@@ -24,6 +26,8 @@ public class App {
 			case GS -> new FuncGroundSpeed();
 			case FTC -> new FuncFahrenheitToCelcius();
 			case CTF -> new FuncCelciusToFahrenheit();
+			case TAS -> new FuncTrueAirspeed();
+			case PA -> new FuncPressureAltitude();
 		};
 
 		func.fit(argumentParser.getParams());
