@@ -40,7 +40,7 @@ public class FuncCrossWindComponent extends Func {
 		Double radialDelta = trueRadials[1] - trueRadials[0]; 
 		Double radialRadians = Math.toRadians(radialDelta);
 		Double crossWindFactor = Math.sin(radialRadians);
-		result = crossWindFactor * windSpeed;
+		result = Math.abs(crossWindFactor * windSpeed);
 	}
 
 }
