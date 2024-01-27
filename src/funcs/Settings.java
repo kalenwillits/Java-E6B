@@ -15,6 +15,8 @@ public class Settings {
 	public static final String TRUE_COURSE_CODE = "TC";
 	public static final String WIND_DIRECTION_CODE = "WD"; 
 	public static final String CROSS_WIND_COMPONENT_CODE = "CWC";
+	public static final String HEAD_WIND_COMPONENT_CODE = "HWC";
 	public static final String WIND_CORRECTION_ANGLE_CODE = "WCA";
 	public static final String WIND_SPEED_CODE = "WS";
+	public static final String TAIL_WIND_COMPONENT_CODE = "TWC";
 }
