@@ -41,4 +41,5 @@ public class Settings {
 	public static final String TRUE_ALTITUDE_CODE = "A";
 	public static final String PRESSURE_ALTITUDE_CODE = "PA";
 	public static final String OUTSIDE_AIR_TEMPERATURE_CODE = "OAT";
+	public static final String DENSITY_ALTITUDE_CODE = "DA";
 }

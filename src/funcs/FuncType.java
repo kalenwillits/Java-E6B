@@ -11,9 +11,11 @@ public enum FuncType {
 	FTC(Settings.FAHRENHEIT_TO_CECLIUS_CODE),
 	CTF(Settings.CELCIUS_TO_FAHRENHEIT_CODE),
 	TAS(Settings.TRUE_AIRSPEED_CODE),
-	PA(Settings.PRESSURE_ALTITUDE_CODE);
+	PA(Settings.PRESSURE_ALTITUDE_CODE),
+	DA(Settings.DENSITY_ALTITUDE_CODE);
 
   private String funcType;
+  // TODO
 
   FuncType(String funcType) {
     this.funcType = funcType;
