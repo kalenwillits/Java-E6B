@@ -2,7 +2,8 @@ package funcs;
 
 
 public enum FuncType {
-	HELP("HELP")
+	HELP(Settings.HELP_CODE),
+	CWC(Settings.CROSS_WIND_COMPONENT_CODE)
 	;
 
   private String funcType;
