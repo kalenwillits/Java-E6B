@@ -24,17 +24,15 @@ public class FuncTrueAirspeed extends Func {
 
 	public void call() {
 		code = Settings.TRUE_AIRSPEED_CODE;
-		 // Convert altitude to meters
         double altitudeMeters = pressureAltitude * 0.3048d;
-		double rho0 = 1.225;  // Standard air density at sea level in kg/m³
-		double L = 0.0065;   // Temperature lapse rate in K/m
-		double T0 = 288.15;  // Standard temperature at sea level in K
-		double g = 9.81;     // Acceleration due to gravity in m/s²
-		double R = 287.0;    // Specific gas constant for dry air in J/(kg·K)
-							 // // Calculate air density at the given altitude
-
-        double nonStandardTempKelvin = outsideAirTemperature + 273.15;
-        double rho = rho0 * Math.pow(1 - (L * altitudeMeters) / nonStandardTempKelvin, g / (R * L));
-		result = calibratedAirspeed * Math.sqrt(rho0 / rho);
+        double nonStandardTempKelvin = outsideAirTemperature + Settings.CELCIUS_TO_KELVIN_FACTOR;
+		double airDensity = Settings.STANDARD_AIR_DENSITY * Math.pow(
+				1 - (
+						Settings.TEMPERATURE_LAPSE_RATE_KPM * altitudeMeters
+					) / nonStandardTempKelvin, Settings.GRAVITY_ACCELERATION / (
+						Settings.SPECIFIC_GAS * Settings.TEMPERATURE_LAPSE_RATE_KPM
+						)
+				);
+		result = calibratedAirspeed * Math.sqrt(Settings.STANDARD_AIR_DENSITY / airDensity);
 	}
 }

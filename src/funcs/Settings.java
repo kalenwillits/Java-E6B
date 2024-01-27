@@ -14,6 +14,12 @@ public class Settings {
 	public static final Double WIND_CORRECTION_ANGLE_APROX_FACTOR = 90d;
 	public static final Double STANDARD_PRESSURE = 29.92d;
 	public static final Double STANDARD_TEMPERATURE_C = 15d; 
+	public static final Double FEET_TO_METERS_FACTOR = 0.3048d;
+	public static final Double STANDARD_AIR_DENSITY = 1.225d;
+	public static final Double TEMPERATURE_LAPSE_RATE_KPM = 0.0065d;
+	public static final Double GRAVITY_ACCELERATION = 9.81d;
+	public static final Double SPECIFIC_GAS = 287.0d;
+	public static final Double CELCIUS_TO_KELVIN_FACTOR = 273.15;
 
 	public static final String HELP_CODE = "HELP";
 	public static final String TRUE_COURSE_CODE = "TC";
