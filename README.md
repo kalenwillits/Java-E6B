@@ -2,6 +2,8 @@
 ## Overview
 *Flight planning at the command line!*
 
+![Example Screenshot](docs/example-2024-01-28.png)
+
 A command line interface E6B flight computer written in the Java programming
 language for general aviation flight planning. Currently in available as a
 source code pre-release alpha.  
