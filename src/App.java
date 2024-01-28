@@ -10,6 +10,7 @@ import funcs.FuncFahrenheitToCelcius;
 import funcs.FuncCelciusToFahrenheit;
 import funcs.FuncTrueAirspeed;
 import funcs.FuncPressureAltitude;
+import funcs.FuncDensityAltitude;
 
 
 public class App {
@@ -28,6 +29,7 @@ public class App {
 			case CTF -> new FuncCelciusToFahrenheit();
 			case TAS -> new FuncTrueAirspeed();
 			case PA -> new FuncPressureAltitude();
+			case DA -> new FuncDensityAltitude();
 		};
 
 		func.fit(argumentParser.getParams());

@@ -13,4 +13,5 @@
 
 ## Contact
 
-## Acknowledgments
+## Sources
+[Density Altitude](https://www.aopa.org/training-and-safety/active-pilots/safety-and-technique/weather/density-altitude)

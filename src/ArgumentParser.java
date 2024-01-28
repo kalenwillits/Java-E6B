@@ -4,18 +4,18 @@ import funcs.FuncType;
 
 public class ArgumentParser {
 	static final String ARGUMENT_PARAMETER_DELIM = "=";
-	static final String NO_FUNCTION_SPECIFIED_ERROR = "No Function Specified";
 
 	static String function;	
 	static HashMap<String, Double> params = new HashMap<String, Double>();
 
 	public ArgumentParser(String[] args) {
 		if (args.length < 1) {
-			throw new java.lang.Error(NO_FUNCTION_SPECIFIED_ERROR);	
-		} 
-		function = args[0];
-		String[] paramsArray = Arrays.copyOfRange(args, 1, args.length);
-		ArgumentParser.parseParams(paramsArray);
+			function = "HELP";
+		} else { 
+			function = args[0];
+			String[] paramsArray = Arrays.copyOfRange(args, 1, args.length);
+			ArgumentParser.parseParams(paramsArray);
+		}
 	}
 
 	static void parseParams(String[] paramsArray) {
