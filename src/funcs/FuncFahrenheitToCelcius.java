@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Arrays;
 
 
-public class FuncFahrenheitToCelcius extends Func {
+public class FuncFahrenheitToCelsius extends Func {
 	public static final String[] requiredParams = {
 		Settings.FAHRENHEIT_CODE
 	};

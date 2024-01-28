@@ -5,21 +5,21 @@ import java.util.HashMap;
 import java.util.Arrays;
 
 
-public class FuncCelciusToFahrenheit extends Func {
+public class FuncCelsiusToFahrenheit extends Func {
 	public static final String[] requiredParams = {
 		Settings.CELCIUS_CODE
 	};
 
 
-	private Double celcius;
+	private Double celsius;
 
 	public void fit(HashMap<String, Double> params) {
-		celcius = params.get(Settings.CELCIUS_CODE);
+		celsius = params.get(Settings.CELCIUS_CODE);
 		validateParams(params, requiredParams);
 	}
 
 	public void call() {
 		code = Settings.FAHRENHEIT_CODE;
-		result = ((9d / 5d) * celcius) + 32;
+		result = ((9d / 5d) * celsius) + 32;
 	}
 }
