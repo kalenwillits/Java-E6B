@@ -1,0 +1,38 @@
+.
+├── bin
+│   ├── build
+│   │   └── funcs
+│   └── dist
+├── docs
+│   ├── design.md
+│   └── tree.txt
+├── env
+├── LICENSE.txt
+├── README.md
+├── run
+│   ├── build.sh
+│   └── run.sh
+└── src
+    ├── App.java
+    ├── ArgumentParser.java
+    └── funcs
+        ├── FuncCelsiusToFahrenheit.java
+        ├── FuncCrossWindComponent.java
+        ├── FuncDensityAltitude.java
+        ├── FuncFahrenheitToCelsius.java
+        ├── FuncFuelConsumption.java
+        ├── FuncGroundSpeed.java
+        ├── FuncHeadWindComponent.java
+        ├── FuncHelp.java
+        ├── Func.java
+        ├── FuncNauticalMiles.java
+        ├── FuncPressureAltitude.java
+        ├── FuncStatuteMiles.java
+        ├── FuncTailWindComponent.java
+        ├── FuncTimeEnRoute.java
+        ├── FuncTrueAirspeed.java
+        ├── FuncType.java
+        ├── FuncWindCorrectionAngle.java
+        └── Settings.java
+
+9 directories, 26 files
