@@ -12,7 +12,8 @@ public enum FuncType {
 	CTF(Settings.CELCIUS_TO_FAHRENHEIT_CODE),
 	TAS(Settings.TRUE_AIRSPEED_CODE),
 	PA(Settings.PRESSURE_ALTITUDE_CODE),
-	DA(Settings.DENSITY_ALTITUDE_CODE);
+	DA(Settings.DENSITY_ALTITUDE_CODE),
+	FUEL(Settings.FUEL_CODE);
 
   private String funcType;
   // TODO

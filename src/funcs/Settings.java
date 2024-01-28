@@ -45,4 +45,10 @@ public class Settings {
 	public static final String PRESSURE_ALTITUDE_CODE = "PA";
 	public static final String OUTSIDE_AIR_TEMPERATURE_CODE = "OAT";
 	public static final String DENSITY_ALTITUDE_CODE = "DA";
+	public static final String DISTANCE_CODE = "D";
+	public static final String HOURS_CODE = "HH";
+	public static final String MINUTES_CODE = "MM";
+	public static final String GALLONS_CODE = "GAL";
+	public static final String GALLONS_PER_HOUR_CODE = "GPH";
+	public static final String FUEL_CODE = "FUEL";
 }

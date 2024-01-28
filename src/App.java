@@ -11,6 +11,7 @@ import funcs.FuncCelciusToFahrenheit;
 import funcs.FuncTrueAirspeed;
 import funcs.FuncPressureAltitude;
 import funcs.FuncDensityAltitude;
+import funcs.FuncFuelConsumption;
 
 
 public class App {
@@ -30,6 +31,7 @@ public class App {
 			case TAS -> new FuncTrueAirspeed();
 			case PA -> new FuncPressureAltitude();
 			case DA -> new FuncDensityAltitude();
+			case FUEL -> new FuncFuelConsumption();
 		};
 
 		func.fit(argumentParser.getParams());
