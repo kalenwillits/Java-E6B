@@ -23,6 +23,7 @@ public class Settings {
 	public static final Double SPECIFIC_GAS = 287.0d;
 	public static final Double CELCIUS_TO_KELVIN_FACTOR = 273.15d;
 	public static final Double DENSITY_CHANGE_FACTOR = 120d;
+	public static final Double DEFAULT_TIME = 0d;
 
 	public static final String HELP_CODE = "HELP";
 	public static final String TRUE_COURSE_CODE = "TC";
@@ -51,4 +52,5 @@ public class Settings {
 	public static final String GALLONS_CODE = "GAL";
 	public static final String GALLONS_PER_HOUR_CODE = "GPH";
 	public static final String FUEL_CODE = "FUEL";
+	public static final String TIME_CODE = "TIME";
 }

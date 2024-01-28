@@ -13,7 +13,8 @@ public enum FuncType {
 	TAS(Settings.TRUE_AIRSPEED_CODE),
 	PA(Settings.PRESSURE_ALTITUDE_CODE),
 	DA(Settings.DENSITY_ALTITUDE_CODE),
-	FUEL(Settings.FUEL_CODE);
+	FUEL(Settings.FUEL_CODE),
+	TIME(Settings.TIME_CODE);
 
   private String funcType;
   // TODO

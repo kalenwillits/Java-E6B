@@ -26,12 +26,12 @@ public class FuncFuelConsumption extends Func {
 			validateParams(params, requiredParams);
 		} else {
 			if (params.get(Settings.HOURS_CODE) == null) {
-				params.put(Settings.HOURS_CODE, 0d);
-				hours = 0d;	
+				params.put(Settings.HOURS_CODE, Settings.DEFAULT_TIME);
+				hours = Settings.DEFAULT_TIME;	
 			}
 			if (params.get(Settings.MINUTES_CODE) == null) {
-				params.put(Settings.MINUTES_CODE, 0d);
-				minutes = 0d;
+				params.put(Settings.MINUTES_CODE, Settings.DEFAULT_TIME);
+				minutes = Settings.DEFAULT_TIME;
 			}
 		}
 		validateParams(params, requiredParams);
