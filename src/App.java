@@ -13,6 +13,8 @@ import funcs.FuncPressureAltitude;
 import funcs.FuncDensityAltitude;
 import funcs.FuncFuelConsumption;
 import funcs.FuncTimeEnRoute;
+import funcs.FuncNauticalMiles;
+import funcs.FuncStatuteMiles;
 
 
 public class App {
@@ -34,6 +36,8 @@ public class App {
 			case DA -> new FuncDensityAltitude();
 			case FUEL -> new FuncFuelConsumption();
 			case TIME -> new FuncTimeEnRoute();
+			case NM -> new FuncNauticalMiles();
+			case SM -> new FuncStatuteMiles();
 		};
 
 		func.fit(argumentParser.getParams());

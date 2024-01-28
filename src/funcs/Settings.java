@@ -24,6 +24,7 @@ public class Settings {
 	public static final Double CELCIUS_TO_KELVIN_FACTOR = 273.15d;
 	public static final Double DENSITY_CHANGE_FACTOR = 120d;
 	public static final Double DEFAULT_TIME = 0d;
+	public static final Double NAUTICAL_MILES_TO_STATUTE_MILES_FACTOR = 1.15078d;
 
 	public static final String HELP_CODE = "HELP";
 	public static final String TRUE_COURSE_CODE = "TC";
@@ -31,7 +32,7 @@ public class Settings {
 	public static final String CROSS_WIND_COMPONENT_CODE = "CWC";
 	public static final String HEAD_WIND_COMPONENT_CODE = "HWC";
 	public static final String WIND_CORRECTION_ANGLE_CODE = "WCA";
-	public static final String WIND_SPEED_CODE = "WS";
+	public static final String WIND_SPEED_CODE = "KTS";
 	public static final String TAIL_WIND_COMPONENT_CODE = "TWC";
 	public static final String TRUE_AIRSPEED_CODE = "TAS";
 	public static final String GROUND_SPEED_CODE = "GS";
@@ -53,4 +54,6 @@ public class Settings {
 	public static final String GALLONS_PER_HOUR_CODE = "GPH";
 	public static final String FUEL_CODE = "FUEL";
 	public static final String TIME_CODE = "TIME";
+	public static final String NAUTICAL_MILES_CODE = "NM";
+	public static final String STATUTE_MILES_CODE = "SM";
 }
