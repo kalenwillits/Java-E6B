@@ -18,7 +18,16 @@ import funcs.FuncStatuteMiles;
 
 
 public class App {
+	public static final String VERSION = "0.1";
+
 	public static void main(String[] args) {
+		if (args.length > 1) {
+			if (args[1].toUpperCase() == "VERSION") {
+				System.out.println("Java E6B v" + VERSION);
+				System.exit(0);
+			}
+		}
+
 		ArgumentParser argumentParser = new ArgumentParser(args);
 		FuncType funcSelect = argumentParser.getFunc();
 

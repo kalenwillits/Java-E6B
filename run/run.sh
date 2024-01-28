@@ -1,3 +1,3 @@
 #!/bin/bash
-cd bin/
-java App $@
+cd bin/build/;
+java App $@;
