@@ -28,6 +28,10 @@ public class FuncGroundSpeed extends Func {
 		code = Settings.GROUND_SPEED_CODE;
 		funcHWC.call();
 		funcTWC.call();
-		result = (trueAirspeed - funcHWC.result) + funcTWC.result;
+		double windComponent = Math.max(funcHWC.result, funcTWC.result);
+		if (funcHWC.result < funcTWC.result) {
+			windComponent*=-1;
+		}
+		result = (trueAirspeed - windComponent);
 	}
 }
